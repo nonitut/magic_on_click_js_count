@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    background: rgb(180, 169, 217);
+}
+.sectionfirst{
+    display: flex;
+    z-index: 100;
+    position: relative;
+}
+
+.guru {
+    position: absolute;
+    margin-top: 10px;
+    z-index: 200;
+    pointer-events: none; 
+}
+
+
+@font-face {
+font-family: "CarlaSansLight";
+src: url("../fonts/CarlaSansLight.ttf") format("truetype");
+font-style: Light;
+font-weight: Light;
+}
+
+p{
+    padding-top: 5%;
+    font-family: 'CarlaSansLight';
+    font-size: 12vw;
+    color: aliceblue;
+    pointer-events: none; 
+    text-align: center;
+}
+
+
+/* .box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+} */
+
+.image{
+    width: 100px;
+    height: 100px;
+    background: rgb(255, 184, 222);
+    position: relative;
+}
+.image2{
+    width: 100px;
+    height: 100px;
+    background: rgb(222, 211, 252);
+    position: relative;
+}
+
+.animal {
+    animation: wow 2s ease-in-out infinite; 
+    margin-top: 200px;
+}
+
+@keyframes wow {
+    0%, 100% { margin-top: 0%; } 
+    50% { margin-top: 10%; } 
+}
